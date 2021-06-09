@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: local # 기본 환경 선택
+
+
+# local 환경 (window)
+---
+spring:
+  profiles: local
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbiface?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: hameesystem20@my
+
+server:
+  port: 9080
+
+
+
+# prod 환경 (linux)
